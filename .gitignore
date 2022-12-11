@@ -1,0 +1,13 @@
+node_modules/
+src/**/*.pdf
+
+/pdf/
+
+*.aux
+*.bcf
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+pnpm-lock.yaml

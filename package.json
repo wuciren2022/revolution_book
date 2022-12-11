@@ -1,0 +1,21 @@
+{
+  "name": "revolution_book",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "author": "WuCiren <wuciren@mail.i2p>",
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-pdflatex2": "^4.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-shell": "^0.8.0",
+    "gulp-util": "^3.0.8",
+    "through2": "^4.0.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

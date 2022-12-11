@@ -1,0 +1,51 @@
+{
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.bind.altKeymap.enabled": false,
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.latex.rootFile.useSubFile": false,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "lualatex ➞ bibtex ➞ lualatex × 2",
+            "tools": [
+                "lualatex",
+                // "bibtex",
+                // "lualatex",
+                // "lualatex",
+            ],
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "lualatex",
+            "command": "lualatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-shell-escape",
+                "-output-directory=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {},
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        }
+    ]
+}
