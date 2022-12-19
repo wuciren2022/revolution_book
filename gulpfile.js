@@ -56,7 +56,7 @@ function build_latex() {
                 cb(finalError ? new $.PluginError("latex", finalError) : null, file)
             });
         }))
-        .pipe(gulp.dest('./pdf/'));
+        .pipe(gulp.dest('./public/pdf/'));
 }
 
 function clean() {
